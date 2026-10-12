@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Float</title>
+    <style>
+        .margin {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        .kotak2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: right;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="margin">
+        <h2 class="center">BELAJAR FLOAT</h2>
+        <hr>
+        <div class="kotak"></div>
+        <h3>PENGERTIAN CSS FLOAT</h3>
+        <p class="justify">
+            Float adalah salah satu properti dalam CSS yang digunakan untuk
+            mengatur posisi suatu elemen agar berada di sisi kiri atau kanan
+            dari elemen pembungkusnya. Properti float memungkinkan elemen lain,
+            seperti teks atau paragraf, mengalir dan menyesuaikan posisi di
+            sekitar elemen tersebut.<br>
+
+            Pada contoh ini, properti float digunakan untuk membuat sebuah
+            kotak berwarna biru berada di sebelah kiri halaman, sementara teks
+            paragraf mengalir di sebelah kanan kotak tersebut.<br>
+        </p>
+        <h3>PROPERTI FLOAT</h3>
+        <p class="justify"> 1. float: left;
+            Digunakan untuk menempatkan elemen di sisi kiri. Elemen lain,
+            seperti teks, dapat mengalir di sebelah kanan elemen tersebut.<br>
+
+            2. float: right;
+            Digunakan untuk menempatkan elemen di sisi kanan. Teks atau
+            konten lain dapat mengalir di sebelah kiri elemen tersebut.<br>
+
+            3. float: none;
+            Digunakan untuk menonaktifkan pengaturan float sehingga elemen
+            kembali mengikuti alur normal dokumen.<br>
+        </p>
+        <h3>KEGUNAAN CSS FLOAT</h3>
+        <div class="kotak2"></div>
+        <p class="justify">Float dapat digunakan untuk mengatur tata letak sederhana,
+            misalnya menempatkan gambar di sebelah kiri atau kanan teks,
+            membuat teks mengelilingi gambar, serta menyusun elemen tertentu
+            dalam sebuah halaman web.<br>
+
+            Pada perkembangan web modern, float lebih sering digunakan untuk
+            membuat teks mengalir di sekitar gambar. Untuk membuat tata letak
+            halaman yang lebih kompleks, seperti kolom atau susunan beberapa
+            elemen, CSS Flexbox dan Grid umumnya lebih disarankan.
+        </p>
+        <h3>KESIMPULAN</h3>
+        <p class="justify">CSS Float merupakan properti yang membantu mengatur posisi elemen
+            ke sisi kiri atau kanan sehingga konten lain dapat mengalir di
+            sekitarnya. Dengan memahami penggunaan float, kita dapat membuat
+            tampilan halaman web yang lebih teratur dan menarik.
+        </p>
+        <p>klik <a href="index.html">disini </a>untuk menuju Galeri</p>
+        <hr>
+        <p class="center">
+            Copyright &copy; Belajar Float. All rights reserved.
+        </p>
+    </div>
+</body>
+
+</html>
