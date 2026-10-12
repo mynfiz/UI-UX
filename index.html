@@ -1,111 +1,201 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALERI</title>
-</head>
-<style>
-    .galeri {
-        background-color: mediumseagreen;
-        padding: 15px;
-        border-radius: 40px;
-    }
 
-    .gambar {
-        float: left;
-        width: 30%;
-        margin: 1.5%;
-        box-sizing: border-box;
-        background-color: white;
-        border: 1px solid #dddddd;
-        padding: 8px;
-        text-align: center;
-    }
-
-    .gambar img {
-        width: 100%;
-        height: 180px;
-    }
-
-    .gambar p {
-        font-size: 16px;
-        color: #333333;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    .justify {
-        text-align: justify;
-    }
-    .h1 {
-        text-align: center;
-        color: #333333;
-    }
-    .menu {
-        margin: 1.5%;
-    }
-    @media screen and (max-width: 768px) {
-        .gambar {
-            width: 47%;
-            margin: 1.5%;
+    <style>
+        /* Mengatur semua elemen */
+        * {
+            box-sizing: border-box;
         }
-    }
-    @media screen and (max-width: 480px) {
+
         body {
-            margin: 10px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
         }
+
+        /* Judul halaman */
+        .h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        /* Kotak utama galeri */
+        .galeri {
+            background-color: mediumseagreen;
+            padding: 15px;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        /* Kotak setiap gambar */
         .gambar {
-            width: 97%;
+            float: left;
+            width: 30%;
             margin: 1.5%;
+            background-color: white;
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: center;
         }
+
+        /* Gambar di dalam kotak */
         .gambar img {
-            height: 200px;
+            display: block;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
         }
-    }
-</style>
+
+        /* Keterangan gambar */
+        .gambar p {
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        /* Membersihkan efek float */
+        .clear {
+            clear: both;
+        }
+
+        /* Paragraf rata tengah */
+        .center {
+            text-align: center;
+        }
+
+        /* Paragraf rata kanan-kiri */
+        .justify {
+            text-align: justify;
+        }
+
+        /* Menu navigasi */
+        .menu {
+            margin: 15px;
+            color: #333333;
+        }
+
+        .menu a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive untuk tablet */
+        @media screen and (max-width: 768px) {
+            body {
+                margin: 15px;
+            }
+
+            .gambar {
+                width: 47%;
+                margin: 1.5%;
+            }
+
+            .gambar img {
+                height: 180px;
+            }
+        }
+
+        /* Responsive untuk HP */
+        @media screen and (max-width: 480px) {
+            body {
+                margin: 10px;
+            }
+
+            .h1 {
+                font-size: 26px;
+            }
+
+            .galeri {
+                padding: 10px;
+                border-radius: 20px;
+            }
+
+            .gambar {
+                float: none;
+                width: 100%;
+                margin: 0 0 15px 0;
+            }
+
+            .gambar:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .gambar img {
+                height: 200px;
+            }
+
+            .gambar p {
+                font-size: 15px;
+            }
+
+            .menu {
+                margin: 15px 5px 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
 
 <body>
+
     <h1 class="h1">Galeri Gambar</h1>
+
     <div class="galeri">
+
         <div class="gambar">
-            <img src="https://picsum.photos/id/20/400/300" alt="Design1">
+            <img src="https://picsum.photos/id/20/400/300" alt="Design 1">
             <p>Gambar 1</p>
         </div>
+
         <div class="gambar">
-            <img src="https://picsum.photos/id/21/400/300" alt="Design2">
+            <img src="https://picsum.photos/id/21/400/300" alt="Design 2">
             <p>Gambar 2</p>
         </div>
+
         <div class="gambar">
-            <img src="https://picsum.photos/id/22/400/300" alt="Design3">
+            <img src="https://picsum.photos/id/22/400/300" alt="Design 3">
             <p>Gambar 3</p>
         </div>
+
         <div class="gambar">
-            <img src="https://picsum.photos/id/23/400/300" alt="Design4">
+            <img src="https://picsum.photos/id/23/400/300" alt="Design 4">
             <p>Gambar 4</p>
         </div>
+
         <div class="gambar">
-            <img src="https://picsum.photos/id/24/400/300" alt="Design5">
+            <img src="https://picsum.photos/id/24/400/300" alt="Design 5">
             <p>Gambar 5</p>
         </div>
+
         <div class="gambar">
-            <img src="https://picsum.photos/id/25/400/300" alt="Design6">
+            <img src="https://picsum.photos/id/25/400/300" alt="Design 6">
             <p>Gambar 6</p>
         </div>
-        <p class="menu">klik <a href="float1.html">disini </a>untuk menuju page float</p>
+
+        <!-- Membersihkan float sebelum menu -->
         <div class="clear"></div>
+
+        <p class="menu">
+            Klik <a href="float1.html">di sini</a> untuk menuju halaman Float.
+        </p>
+
     </div>
+
     <hr>
+
     <p class="center">
         Copyright &copy; Belajar Float. All rights reserved.
     </p>
+
 </body>
 
 </html>
